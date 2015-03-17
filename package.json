@@ -1,0 +1,24 @@
+{
+  "name": "streambuffers",
+  "version": "1.0.0",
+  "description": "Buffer-based readable and writable streams",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec --ui bdd"
+  },
+  "author": "Jordan Santell",
+  "license": "MIT License",
+  "devDependencies": {
+    "chai": "~2.1.2",
+    "mocha": "~2.2.1",
+    "buffer-equal": "0.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsantell/streambuffers.git"
+  },
+  "homepage": "https://github.com/jsantell/streambuffers",
+  "dependencies": {
+    "buffer-queue": "~1.0.0"
+  }
+}
