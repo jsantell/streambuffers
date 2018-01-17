@@ -1,6 +1,6 @@
 {
   "name": "streambuffers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Buffer-based readable and writable streams",
   "main": "index.js",
   "scripts": {
