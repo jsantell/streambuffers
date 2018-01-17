@@ -23,4 +23,10 @@ describe("Writable", function () {
         done();
       });
   });
+
+  it("writes the chunk passed to 'end'", function () {
+    var out = new Writable();
+    out.end(new Buffer("foo"));
+    expect(out.toBuffer().toString()).to.equal("foo");
+  });
 });
