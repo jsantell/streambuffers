@@ -14,6 +14,11 @@ describe("Readable", function () {
     expect(new Readable(new Buffer(100))).to.be.instanceOf(stream.Readable);
   });
 
+  it("instance of stream.Readable without 'new' keyword", function () {
+    expect(Readable(new Buffer(100))).to.be.instanceOf(stream.Readable);
+  });
+
+
   it("pushes provided buffer downstream and closes", function (done) {
     var buffer = fs.readFileSync(filePath);
     var stream = new Readable(buffer);

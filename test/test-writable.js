@@ -14,6 +14,10 @@ describe("Writable", function () {
     expect(new Writable()).to.be.instanceOf(stream.Writable);
   });
 
+  it("instance of stream.Writable without 'new' keyword", function () {
+    expect(Writable()).to.be.instanceOf(stream.Writable);
+  });
+
   it("handles being piped", function (done) {
     var stream = new Writable();
     fs.createReadStream(filePath)
